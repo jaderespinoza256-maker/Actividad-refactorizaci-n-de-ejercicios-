@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Conversión de Temperatura</title>
+</head>
+<body>
+    <h1>Conversión de Temperatura</h1>
+    <div id="resultado" style="color: green;"></div>
+    <script>
+        function convertirTemperatura() {
+            let celsius = parseFloat(prompt("Ingresa la temperatura en grados Celsius:"));
+            let fahrenheit = (celsius * 9/5) + 32;
+            document.getElementById("resultado").innerHTML =
+                "La temperatura en Fahrenheit es igual a " + fahrenheit + "°F";
+        }
+        convertirTemperatura();
+    </script>
+</body>
+</html>
